@@ -13,7 +13,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import static com.sun.deploy.cache.Cache.copyFile;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 
@@ -74,21 +73,21 @@ public class Utils extends BasePage {
         return  format.format(new Date());
     }
 
-    public static void captureScreenShot(String screenshotName)
-    {
-        try {
-            TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-            File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-            try {
-                copyFile(source, new File("C:\\Users\\Welcome\\IdeaProjects\\NewJenkins4\\.idea\\Screenshot" + screenshotName +  ".png"));
-                System.out.println("Screenshot has been taken");
-            } catch (IOException e) {
-                System.out.println("Exception while taking screenshot"+e.getMessage());
-            }
-        }finally {
-
-        }
-    }
+//    public static void captureScreenShot(String screenshotName)
+//    {
+//        try {
+//            TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+//            File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
+//            try {
+//                copyFile(source, new File("C:\\Users\\Welcome\\IdeaProjects\\NewJenkins4\\.idea\\Screenshot" + screenshotName +  ".png"));
+//                System.out.println("Screenshot has been taken");
+//            } catch (IOException e) {
+//                System.out.println("Exception while taking screenshot"+e.getMessage());
+//            }
+//        }finally {
+//
+//        }
+//    }
 
     public void Select_The_Checkbox(WebElement element) {
         try {

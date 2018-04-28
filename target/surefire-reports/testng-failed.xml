@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Jenkins.TestSuite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="Jenkins.TestSuite">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="navigationToElectronicPage"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- Jenkins.TestSuite -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Jenkins.TestSuite] -->
